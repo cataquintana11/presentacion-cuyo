@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sistema Eléctrico Argentino · Región de Cuyo</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="kbd-hint"><b>←</b> <b>→</b> navegar</div>
+
+<div class="deck" id="deck">
+
+  <!-- ===================== SLIDE 1 · CARÁTULA ===================== -->
+  <section class="slide cover is-active">
+    <div class="wrap">
+      <div class="cover-grid">
+        <div>
+          <div class="eyebrow reveal" style="--d:1">Trabajo de Investigación</div>
+          <h1 class="reveal" style="--d:2">Sistema Eléctrico Argentino<span class="hi">Región de Cuyo</span></h1>
+          <div class="sub reveal" style="--d:4">Asignatura IMRSC&nbsp;&nbsp;·&nbsp;&nbsp;7.º año Informática B&nbsp;&nbsp;·&nbsp;&nbsp;Comisión 5</div>
+          <div class="team reveal" style="--d:5">
+            <div class="tt">Integrantes</div>
+            <ul>
+              <li><b>01</b>Mia Niello</li>
+              <li><b>02</b>Milagros Camino</li>
+              <li><b>03</b>Tatiana Bravo</li>
+              <li><b>04</b>Catalina Quintana</li>
+              <li><b>05</b>Nicolás Perri</li>
+            </ul>
+          </div>
+        </div>
+        <div class="gauge reveal" style="--d:3">
+          <div class="ring"></div>
+          <div class="ring r2"></div>
+          <div class="core">
+            <div class="big">500<span style="font-size:.4em">kV</span></div>
+            <div class="lbl">Nodo Cuyano · SADI</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SLIDE 2 · MARCO INSTITUCIONAL ===================== -->
+  <section class="slide">
+    <div class="wrap">
+      <div class="s-head">
+        <div>
+          <div class="kicker">02 · Marco Institucional</div>
+          <h1 class="s-title">Los organismos que <span class="hi">coordinan el sistema</span></h1>
+        </div>
+        <div class="s-meta"><b>MEM</b> · <b>CAMMESA</b> · <b>SADI</b><br>Integración Cuyo ↔ País</div>
+      </div>
+      <div class="tiles">
+        <div class="panel tile reveal" style="--d:1">
+          <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 3v18h18"/><path d="M7 14l3-4 3 3 4-6"/></svg></div>
+          <div class="role">Ámbito comercial</div>
+          <h3>MEM</h3>
+          <p><b>Mercado Eléctrico Mayorista.</b> Espacio donde los generadores cuyanos —hidroeléctricos, térmicos y solares— vuelcan su producción para ser adquirida por grandes usuarios, industrias y distribuidoras locales para el consumo residencial.</p>
+        </div>
+        <div class="panel tile reveal" style="--d:2">
+          <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg></div>
+          <div class="role">Despacho técnico</div>
+          <h3>CAMMESA</h3>
+          <p>Compañía encargada del <b>despacho técnico y económico en tiempo real.</b> Determina qué plantas de la región operan en cada momento para cubrir la demanda de la forma más eficiente y económica posible.</p>
+        </div>
+        <div class="panel tile reveal" style="--d:3">
+          <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="5" cy="12" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 12l10-5M7 12l10 5"/></svg></div>
+          <div class="role">Red física nacional</div>
+          <h3>SADI</h3>
+          <p><b>Sistema Argentino de Interconexión.</b> Red mallada que unifica oferta y demanda: permite que la energía de Cuyo abastezca a otras regiones o que la zona reciba energía del resto del país cuando el recurso local es insuficiente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SLIDE 3 · TRANSPORTE ===================== -->
+  <section class="slide">
+    <div class="wrap">
+      <div class="s-head">
+        <div>
+          <div class="kicker">03 · Infraestructura de Transporte</div>
+          <h1 class="s-title">Los gigantes del <span class="hi">transporte eléctrico</span></h1>
+        </div>
+        <div class="s-meta">Fiscaliza: <b>ENRE</b><br>Federal · Autárquico</div>
+      </div>
+      <div class="versus">
+        <div class="panel vs-card reveal" style="--d:1">
+          <div class="lvl">Extra Alta Tensión</div>
+          <h3>TRANSENER S.A.</h3>
+          <div class="voltbig">500<span> kV</span></div>
+          <div class="vs-kv">
+            <div>Concesionaria del transporte en Alta Tensión a nivel nacional.</div>
+            <div>Opera la red troncal de Extra Alta Tensión: la "gran autopista eléctrica".</div>
+            <div>Conecta físicamente el nodo cuyano con el SADI.</div>
+          </div>
+        </div>
+        <div class="vs-mid reveal" style="--d:2"><span class="badge">Interconexión</span></div>
+        <div class="panel vs-card reveal" style="--d:3">
+          <div class="lvl">Alta Tensión Regional</div>
+          <h3>Distrocuyo S.A.</h3>
+          <div class="voltbig">132<span> kV</span></div>
+          <div class="vs-kv">
+            <div>Encargada del transporte regional secundario en Mendoza y San Juan.</div>
+            <div>Recibe la energía elevada de las centrales locales.</div>
+            <div>Vincula las centrales con los nodos de consumo provincial.</div>
+          </div>
+        </div>
+      </div>
+      <div class="panel enre-bar reveal" style="--d:4">
+        <span class="tagn">ENRE</span>
+        <p>El <b>Ente Nacional Regulador de la Electricidad</b> —organismo autárquico federal— fiscaliza los contratos de concesión, dicta reglamentos de seguridad pública y supervisa la calidad del servicio de las transportistas mayoristas que operan en la región: Transener y Distrocuyo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SLIDE 4 · POTRERILLOS ===================== -->
+  <section class="slide accent-hydro">
+    <div class="wrap">
+      <div class="s-head">
+        <div>
+          <div class="kicker">04 · Ficha Técnica</div>
+          <h1 class="s-title">Central Hidroeléctrica <span class="hi">Potrerillos</span></h1>
+        </div>
+        <div class="s-meta">Mendoza · Río Mendoza<br><b>Renovable convencional</b></div>
+      </div>
+      <div class="ficha">
+        <div class="ficha-main">
+          <div class="energy-strip h-bar reveal" style="--d:1"></div>
+          <div class="ficha-stats">
+            <div class="panel stat reveal" style="--d:1">
+              <div class="v">181 <span class="u">MW</span></div>
+              <div class="l">Potencia instalada total del complejo en cascada.</div>
+            </div>
+            <div class="panel stat reveal" style="--d:2">
+              <div class="v">2 <span class="u">centrales</span></div>
+              <div class="l">Cacheuta (120&nbsp;MW) + Álvarez Condarco (61&nbsp;MW).</div>
+            </div>
+          </div>
+          <p class="desc reveal" style="--d:3">Aprovecha la fuerza del agua del Río Mendoza mediante el imponente <b>embalse Potrerillos</b>, funcionando como un sistema combinado de dos centrales en cascada. El agua del embalse se conduce por túneles en la montaña para hacer girar los generadores y luego el caudal se devuelve al río.</p>
+          <ul class="spec-list reveal" style="--d:4">
+            <li><span class="k">Turbinas</span><span class="val"><b>Tipo Francis</b> — ideales para caudales y saltos de agua medianos.</span></li>
+            <li><span class="k">Conducción</span><span class="val">Túneles en la montaña hacia los generadores; el caudal retorna al cauce.</span></li>
+            <li><span class="k">Inyección SADI</span><span class="val">Genera en media tensión y eleva a <b>132&nbsp;kV</b> en su Estación Transformadora propia hacia la red de Distrocuyo.</span></li>
+          </ul>
+        </div>
+        <div class="imgph reveal" style="--d:3">
+          <div class="ph-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M3 17l5-4 4 3 4-4 5 4"/></svg></div>
+          <div class="ph-tag">Imagen 01</div>
+          <div class="ph-q">central hidroeléctrica Potrerillos Mendoza embalse</div>
+          <div class="ph-d">Vista del embalse y la presa con la cordillera de fondo; o casa de máquinas con turbinas Francis.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SLIDE 5 · ULLUM ===================== -->
+  <section class="slide">
+    <div class="wrap">
+      <div class="s-head">
+        <div>
+          <div class="kicker">05 · Ficha Técnica</div>
+          <h1 class="s-title">Parque Solar <span class="hi">Ullum</span></h1>
+        </div>
+        <div class="s-meta">San Juan · Línea Punta Negra<br><b>Renovable no convencional</b></div>
+      </div>
+      <div class="ficha">
+        <div class="ficha-main">
+          <div class="energy-strip s-bar reveal" style="--d:1"></div>
+          <div class="ficha-stats">
+            <div class="panel stat reveal" style="--d:1">
+              <div class="v">283.000 <span class="u">paneles</span></div>
+              <div class="l">Módulos monocristalinos en casi 300&nbsp;hectáreas.</div>
+            </div>
+            <div class="panel stat reveal" style="--d:2">
+              <div class="v">82 <span class="u">MW</span></div>
+              <div class="l">Bloque principal de Genneia; el complejo total supera los 300&nbsp;MW.</div>
+            </div>
+          </div>
+          <p class="desc reveal" style="--d:3">San Juan posee una de las mejores radiaciones solares del mundo. El complejo no es un solo bloque, sino un enorme <b>nodo fotovoltaico</b> dividido en etapas (Ullum I, II, III, IV) operado por empresas como Genneia y la estatal provincial EPSE.</p>
+          <ul class="spec-list reveal" style="--d:4">
+            <li><span class="k">Conversión</span><span class="val">Inversores electrónicos: <span class="eq"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>CC</mi><mo>→</mo><mi>CA</mi></math></span> (corriente continua a alterna para la red pública).</span></li>
+            <li><span class="k">Tecnología</span><span class="val">Más de 283.000 paneles <b>monocristalinos</b> de alto rendimiento.</span></li>
+            <li><span class="k">Inyección SADI</span><span class="val">Inversores entregan en 33&nbsp;kV; la ET Solar San Juan eleva a <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>33</mn><mo>&#8201;</mo><mi>kV</mi><mo>→</mo><mn>132</mn><mo>&#8201;</mo><mi>kV</mi></math> hacia Punta Negra.</span></li>
+          </ul>
+        </div>
+        <div class="imgph reveal" style="--d:3">
+          <div class="ph-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M3 17l5-4 4 3 4-4 5 4"/></svg></div>
+          <div class="ph-tag">Imagen 02</div>
+          <div class="ph-q">parque solar fotovoltaico Ullum San Juan paneles</div>
+          <div class="ph-d">Vista aérea de hileras de paneles monocristalinos en terreno árido con la precordillera de fondo.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SLIDE 6 · MATRIZ COMPARATIVA ===================== -->
+  <section class="slide">
+    <div class="wrap">
+      <div class="s-head">
+        <div>
+          <div class="kicker">06 · Matriz Energética Regional</div>
+          <h1 class="s-title">Comparativa de <span class="hi">tecnologías</span></h1>
+        </div>
+        <div class="s-meta">Geografía + recurso natural<br>definen la matriz cuyana</div>
+      </div>
+      <div class="panel reveal" style="--d:1;overflow:auto">
+        <table class="ctable">
+          <thead>
+            <tr>
+              <th></th>
+              <th class="en h">Hidroeléctrica</th>
+              <th class="en s">Solar</th>
+              <th class="en t">Térmica (Fósil)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Recurso</th>
+              <td>Ríos de deshielo de los Andes <span class="mini">renovable convencional</span></td>
+              <td>Radiación &gt; 8,22 kWh/m² diarios <span class="mini">renovable no convencional</span></td>
+              <td>Gas / gasoil de la Cuenca Cuyana <span class="mini">no renovable</span></td>
+            </tr>
+            <tr>
+              <th>Rol en la red</th>
+              <td>Fuente principal por relieve montañoso</td>
+              <td>Mayor potencial de crecimiento regional</td>
+              <td>Estabilidad y respaldo ante picos de demanda</td>
+            </tr>
+            <tr>
+              <th class="pro">Ventajas</th>
+              <td class="pro">Aprovecha el flujo natural sin consumir el agua (solo energía cinética).</td>
+              <td class="pro">La fuente más limpia en operación: sin emisión de gases de efecto invernadero.</td>
+              <td class="pro">Alta disponibilidad y estabilidad para el despacho regional.</td>
+            </tr>
+            <tr>
+              <th class="con">Desventajas</th>
+              <td class="con">Los embalses alteran ecosistemas fluviales, sedimentación e impacto visual.</td>
+              <td class="con">Ocupa grandes superficies de suelo árido e intermitencia día/noche y clima.</td>
+              <td class="con">Emite <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>CO</mi><mn>2</mn></msub></math> y contaminantes; agota recursos no renovables.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SLIDE 7 · TÉRMICA / CUENCA CUYANA ===================== -->
+  <section class="slide">
+    <div class="wrap">
+      <div class="s-head">
+        <div>
+          <div class="kicker">07 · Energía Térmica</div>
+          <h1 class="s-title">La <span class="hi">Cuenca Cuyana</span> y la estabilidad del sistema</h1>
+        </div>
+        <div class="s-meta">Mendoza · Gas y gasoil<br><b>Respaldo del despacho</b></div>
+      </div>
+      <div class="split2">
+        <div class="panel flowbox reveal" style="--d:1">
+          <div class="tag"><span class="dot" style="background:var(--thermal);box-shadow:0 0 8px var(--thermal)"></span>De la cuenca a la red</div>
+          <p class="lead">Existen centrales térmicas a gas o gasoil situadas estratégicamente en Mendoza. El recurso se vincula con la <b>Cuenca Cuyana</b>, que aporta cerca del <span class="hl">5% de la producción de crudo del país</span>.</p>
+          <div class="fuel-chain">
+            <div class="node"><div class="ic">⛏️</div><div class="nm">Cuenca Cuyana</div></div>
+            <div class="arr">→</div>
+            <div class="node"><div class="ic">🔥</div><div class="nm">Central térmica</div></div>
+            <div class="arr">→</div>
+            <div class="node"><div class="ic">⚡</div><div class="nm">Estabilidad red</div></div>
+          </div>
+          <p class="lead" style="font-size:14px">La cercanía a estos recursos permite alimentar centrales locales para <b>garantizar el suministro cuando los recursos variables (como el solar) no están disponibles</b>.</p>
+        </div>
+        <div class="panel flowbox reveal" style="--d:2">
+          <div class="tag"><span class="dot"></span>Participación en la matriz nacional</div>
+          <div class="donut-wrap">
+            <div class="donut">
+              <div class="ctr"><b>48%</b><span>térmica</span></div>
+            </div>
+            <div class="legend">
+              <div><i style="background:var(--thermal)"></i> Térmica fósil — 48%</div>
+              <div><i style="background:var(--hydro)"></i> Hidroeléctrica</div>
+              <div><i style="background:var(--solar)"></i> Solar / renovables NC</div>
+              <div><i style="background:var(--line-bright)"></i> Otras fuentes</div>
+            </div>
+          </div>
+          <p class="lead" style="font-size:13.5px">Desventaja ambiental: la quema de combustibles fósiles libera <span class="eq"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>CO</mi><mn>2</mn></msub></math></span> y contaminantes a la atmósfera, además de agotar recursos no renovables.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SLIDE 8 · CAMINO ENERGÍA 1-3 ===================== -->
+  <section class="slide">
+    <div class="wrap">
+      <div class="s-head">
+        <div>
+          <div class="kicker">08 · El Camino de la Energía</div>
+          <h1 class="s-title">De la planta al <span class="hi">transporte troncal</span></h1>
+        </div>
+        <div class="s-meta">Etapas 1 → 3<br>Generación · Elevación · Transporte</div>
+      </div>
+      <div class="flow">
+        <div class="panel step reveal" style="--d:1">
+          <div class="num">1</div>
+          <div class="body">
+            <h4>Generación y elevación en planta</h4>
+            <p>Potrerillos y Ullum producen energía en <b>media tensión</b>. Para viajar cientos de kilómetros sin perderse en forma de calor, las estaciones transformadoras de cada planta elevan el voltaje a alta tensión.</p>
+          </div>
+          <div class="volt"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>13,2</mn><mo>–</mo><mn>25</mn><mo>&#8201;</mo><mi>kV</mi></math><small>Media tensión</small></div>
+        </div>
+        <div class="panel step reveal" style="--d:2">
+          <div class="num">2</div>
+          <div class="body">
+            <h4>Elevación a Alta Tensión</h4>
+            <p>La Estación Transformadora de cada central eleva la energía al nivel de transporte regional, <b>habitual en las redes de Cuyo</b>, para minimizar las pérdidas en la línea.</p>
+          </div>
+          <div class="volt"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>132</mn><mo>&#8201;</mo><mi>kV</mi></math><small>Alta tensión</small></div>
+        </div>
+        <div class="panel step reveal" style="--d:3">
+          <div class="num">3</div>
+          <div class="body">
+            <h4>Transporte troncal regional · DISTROCUYO S.A.</h4>
+            <p>La energía elevada viaja por las torres y líneas aéreas que cruzan los paisajes cuyanos. <b>Distrocuyo opera y mantiene esta red</b>, conectando las centrales con los nodos de consumo.</p>
+          </div>
+          <div class="volt"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>132</mn><mo>&#8201;</mo><mi>kV</mi></math><small>Red regional</small></div>
+        </div>
+      </div>
+      <div class="imgph reveal" style="--d:4;min-height:0;flex-direction:row;align-items:center;gap:18px;margin-top:8px">
+        <div class="ph-ico" style="position:static"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2L4 22M12 2l8 20M7 8h10M5 15h14"/></svg></div>
+        <div><div class="ph-q" style="margin-bottom:3px">torres de alta tensión 132 kV líneas Cuyo cordillera</div><div class="ph-d">Líneas de transmisión cruzando el paisaje cuyano de montaña.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SLIDE 9 · CAMINO ENERGÍA 4-5 ===================== -->
+  <section class="slide">
+    <div class="wrap">
+      <div class="s-head">
+        <div>
+          <div class="kicker">09 · El Camino de la Energía</div>
+          <h1 class="s-title">Del rebaje al <span class="hi">tomacorriente</span></h1>
+        </div>
+        <div class="s-meta">Etapas 4 → 5<br>Control local: EPRE</div>
+      </div>
+      <div class="flow">
+        <div class="panel step reveal" style="--d:1">
+          <div class="num">4</div>
+          <div class="body">
+            <h4>Subestaciones de rebaje</h4>
+            <p>Al acercarse al Gran Mendoza o Gran San Juan, la energía ingresa a subestaciones (ej. <b>ET Cruz de Piedra</b> o <b>ET Nueva San Juan</b>), donde el voltaje se rebaja a media tensión. A partir de aquí, el control pasa a las distribuidoras locales.</p>
+          </div>
+          <div class="volt"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>13,2</mn><mo>/</mo><mn>33</mn><mo>&#8201;</mo><mi>kV</mi></math><small>Media tensión</small></div>
+        </div>
+        <div class="panel step reveal" style="--d:2">
+          <div class="num">5</div>
+          <div class="body">
+            <h4>Transformadores de manzana</h4>
+            <p>La energía circula por el cableado público hasta los transformadores de las esquinas, que reducen el voltaje al estándar de seguridad domiciliario argentino: <b>220&nbsp;V</b> (monofásica) y <b>380&nbsp;V</b> (trifásica).</p>
+          </div>
+          <div class="volt"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>220</mn><mo>/</mo><mn>380</mn><mo>&#8201;</mo><mi>V</mi></math><small>Baja tensión</small></div>
+        </div>
+        <div class="panel step reveal" style="--d:3;border-left-color:var(--solar)">
+          <div class="num" style="color:var(--solar)">6</div>
+          <div class="body">
+            <h4>Acometida y medidor domiciliario</h4>
+            <p>El cable de baja tensión ingresa a la propiedad por la acometida, pasa por el medidor de la distribuidora (<b>EDEMSA</b> en Mendoza o <b>Energía San Juan</b>) y llega al tablero interno: llaves térmicas, disyuntor y tomacorrientes.</p>
+          </div>
+          <div class="volt">EPRE<small>Control provincial</small></div>
+        </div>
+      </div>
+      <div class="panel callout reveal" style="--d:4;margin-top:8px">
+        <h4>El rol del control local</h4>
+        <p>Aunque CAMMESA despacha la energía a nivel nacional, los entes provinciales <b>EPRE Mendoza</b> y <b>EPRE San Juan</b> controlan que EDEMSA y Energía San Juan mantengan la red domiciliaria estable, segura y con los voltajes correctos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SLIDE 10 · FACTURA P1 ===================== -->
+  <section class="slide">
+    <div class="wrap">
+      <div class="s-head">
+        <div>
+          <div class="kicker">10 · Análisis de Factura · EDEMSA</div>
+          <h1 class="s-title">Suministro y <span class="hi">registro de consumo</span></h1>
+        </div>
+        <div class="s-meta">Parte 1 de 2<br>Bimestre 03/2022 · 64 días</div>
+      </div>
+      <div class="bill-layout">
+        <div class="bill reveal" style="--d:1">
+          <div class="b-top">
+            <div class="b-logo">EDEMSA<span>Distribuidora · Mendoza</span></div>
+            <div class="b-doc">FACTURA<br>Emisión: 03/06/2022<br>Bimestre 03/2022</div>
+          </div>
+          <div class="b-grid">
+            <div class="f"><div class="fl">Titular</div><div class="fv">Ramírez Gabriel Delfín</div></div>
+            <div class="f"><div class="fl">Suministro (NIC)</div><div class="fv">2590254</div></div>
+            <div class="f"><div class="fl">Dirección</div><div class="fv">Villa Nueva, Guaymallén</div></div>
+            <div class="f"><div class="fl">Medidor N.º</div><div class="fv">170956</div></div>
+            <div class="f"><div class="fl">Categoría</div><div class="fv"><span class="b-chip">T1R2 · Social Urbano</span></div></div>
+            <div class="f"><div class="fl">Días facturados</div><div class="fv">64 días</div></div>
+          </div>
+          <div class="b-read">
+            <div class="r"><div class="rv">34.149</div><div class="rl">Lect. anterior</div></div>
+            <div class="r"><div class="rv">34.488</div><div class="rl">Lect. actual</div></div>
+            <div class="r big"><div class="rv">339</div><div class="rl">kWh consumidos</div></div>
+          </div>
+        </div>
+        <div class="bill-notes">
+          <div class="panel callout reveal" style="--d:2">
+            <h4>Categoría tarifaria · T1R2</h4>
+            <p><b>T1:</b> pequeño consumidor residencial. <b>R2:</b> rango de consumo intermedio. <b>Social Urbano:</b> usuario alcanzado por el beneficio de tarifa social / subsidio estatal definido por el EPRE Mendoza.</p>
+          </div>
+          <div class="codebox reveal" style="--d:3">
+            <div class="c"><div class="cl">NIC</div><div class="cv">2590254</div></div>
+            <div class="c"><div class="cl">Medidor</div><div class="cv">170956</div></div>
+          </div>
+          <div class="panel callout reveal" style="--d:4">
+            <h4>Registro de consumo</h4>
+            <p>El consumo surge de la diferencia entre lecturas físicas del medidor: <b>34.488 − 34.149 = 339 kWh</b> en el bimestre. La factura incorpora además un gráfico de barras histórico para detectar anomalías o variaciones estacionales.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SLIDE 11 · FACTURA P2 ===================== -->
+  <section class="slide">
+    <div class="wrap">
+      <div class="s-head">
+        <div>
+          <div class="kicker">11 · Análisis de Factura · EDEMSA</div>
+          <h1 class="s-title">Desglose de <span class="hi">costos e impuestos</span></h1>
+        </div>
+        <div class="s-meta">Parte 2 de 2<br>Liquidación final</div>
+      </div>
+      <div class="bill-layout">
+        <div class="bill reveal" style="--d:1">
+          <div class="b-top">
+            <div class="b-logo">EDEMSA<span>Liquidación del período</span></div>
+            <div class="b-doc">NIC 2590254<br>339 kWh</div>
+          </div>
+          <table class="b-rows">
+            <tr><td>Cargo Fijo <span style="color:#7a8aa3">· disponibilidad de red</span></td><td>incl.</td></tr>
+            <tr><td>Cargo Variable <span style="color:#7a8aa3">· 339 kWh</span></td><td>incl.</td></tr>
+            <tr class="sub"><td>Subsidio Tarifa Social <span style="color:#0a8754">· bonificación estatal</span></td><td>(−)</td></tr>
+            <tr><td>Impuestos (Nac. + Prov.) <span style="color:#7a8aa3">· IVA + tasas</span></td><td>$1.552,68</td></tr>
+            <tr><td>Conceptos no eléctricos</td><td>$0,00</td></tr>
+            <tr><td>Ajustes por redondeo</td><td>±</td></tr>
+            <tr class="tot"><td>Total a pagar</td><td>$3.222,00</td></tr>
+          </table>
+        </div>
+        <div class="bill-notes">
+          <div class="panel callout reveal" style="--d:2">
+            <h4>A · Conceptos eléctricos (sujetos a IVA)</h4>
+            <p><b>Cargo fijo:</b> costo básico por disponibilidad y mantenimiento de red, independiente del consumo. <b>Cargo variable:</b> proporcional a los 339 kWh (el mayor porcentaje del neto). <b>Subsidio social:</b> descuento estatal sobre los cargos netos.</p>
+          </div>
+          <div class="panel callout reveal" style="--d:3">
+            <h4>B · Cuadro impositivo</h4>
+            <p>Tributos provinciales de Mendoza destinados al fondo de infraestructura del sistema eléctrico. <b>Total impuestos nacionales y provinciales: $1.552,68</b> (IVA + tasas provinciales).</p>
+          </div>
+          <div class="panel callout reveal" style="--d:4;border-left-color:var(--solar)">
+            <h4>Ecuación de la liquidación final</h4>
+            <p style="font-family:var(--ff-mono);color:var(--ink-2)">(Cargo Fijo + Cargo Variable con subsidio) + Impuestos + Redondeo = <b style="color:var(--cyan)">$3.222,00</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SLIDE 12 · CRÍTICA: DAG ===================== -->
+  <section class="slide">
+    <div class="wrap">
+      <div class="s-head">
+        <div>
+          <div class="kicker">12 · Crítica al Sistema</div>
+          <h1 class="s-title">Fragilidad de la red y el <span class="hi">DAG Gran Mendoza</span></h1>
+        </div>
+        <div class="s-meta">Sistema Automático<br>de Desconexión</div>
+      </div>
+      <div class="dag-box">
+        <div class="panel dag-vis reveal" style="--d:1">
+          <div class="ring2"><b>DAG</b></div>
+          <div class="cap">Desconexión Automática de Generación · Gran Mendoza</div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:18px;justify-content:center">
+          <p class="lead reveal" style="--d:2">Una de las principales problemáticas es la necesidad de un <b>Sistema Automático de Desconexión (DAG) regional</b>. Su sola existencia evidencia que la infraestructura de transporte en Cuyo es <span class="hl">vulnerable a desequilibrios</span> entre generación y demanda.</p>
+          <div class="panel callout reveal" style="--d:3">
+            <h4>¿Cómo actúa?</h4>
+            <p>Ante fallas en el Sistema Argentino de Interconexión (SADI), el DAG <b>desconecta cargas automáticamente</b> para evitar un colapso total de la red local.</p>
+          </div>
+          <div class="panel callout reveal" style="--d:4">
+            <h4>Coordinación fragmentada del transporte</h4>
+            <p>Transener opera las líneas de 500&nbsp;kV mientras Distrocuyo gestiona los 132&nbsp;kV. Esta división exige una coordinación perfecta de CAMMESA: una falla en los nodos de interconexión puede <b>aislar a la región</b> del resto del país.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SLIDE 13 · DESAFÍOS GEOGRÁFICOS ===================== -->
+  <section class="slide">
+    <div class="wrap">
+      <div class="s-head">
+        <div>
+          <div class="kicker">13 · Desafíos Geográficos y Climáticos</div>
+          <h1 class="s-title">La cordillera impone <span class="hi">condiciones extremas</span></h1>
+        </div>
+        <div class="s-meta">Al pie de los Andes<br>Estrés mecánico y ambiental</div>
+      </div>
+      <div class="grid3">
+        <div class="panel issue reveal" style="--d:1">
+          <div class="ic">❄️</div>
+          <h3>Sobrecargas mecánicas</h3>
+          <p>En zonas de montaña, conductores y aisladores deben soportar la <b>tracción adicional del peso de la nieve y el hielo</b>, lo que aumenta el riesgo de fallas estructurales en las líneas.</p>
+        </div>
+        <div class="panel issue warn reveal" style="--d:2">
+          <div class="ic">⚡</div>
+          <h3>Contaminación y flashover</h3>
+          <p>El clima árido favorece la <b>acumulación de suciedad</b> en los aisladores de porcelana o vidrio, capaz de provocar descargas disruptivas (<i>flashover</i>) que interrumpen el servicio.</p>
+        </div>
+        <div class="panel issue info reveal" style="--d:3">
+          <div class="ic">🛡️</div>
+          <h3>Mantenimiento costoso</h3>
+          <p>Obliga al uso de <b>aisladores compuestos o sintéticos</b>, más costosos pero necesarios en zonas sucias o de difícil acceso, elevando el costo de operación de la red regional.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SLIDE 14 · DEBILIDADES ECONÓMICAS ===================== -->
+  <section class="slide">
+    <div class="wrap">
+      <div class="s-head">
+        <div>
+          <div class="kicker">14 · Debilidades Económicas y Regulatorias</div>
+          <h1 class="s-title">Costos marginales y <span class="hi">transición pendiente</span></h1>
+        </div>
+        <div class="s-meta">Equilibrio inversión<br>↔ tarifa pagable (ENRE)</div>
+      </div>
+      <div class="grid2">
+        <div class="panel issue reveal" style="--d:1">
+          <div class="bignum"><div class="v t">236 <span style="font-size:.4em;color:var(--ink-dim)">USD/MWh</span></div><div class="l">Costo marginal variable que el sistema puede superar en horas de alta demanda.</div></div>
+          <p>El ENRE debe equilibrar las inversiones necesarias para expandir el transporte con tarifas que sean <b>pagables</b> por los usuarios residenciales y grandes usuarios de Mendoza y San Juan.</p>
+        </div>
+        <div class="panel issue warn reveal" style="--d:2">
+          <div class="tag"><span class="dot" style="background:var(--solar);box-shadow:0 0 8px var(--solar)"></span>Dependencia de combustibles fósiles</div>
+          <div class="matrixbar" style="margin:6px 0">
+            <div class="row"><span class="nm">No renov.</span><span class="track"><i style="width:60%;background:var(--thermal)"></i></span><span class="pct">60%</span></div>
+            <div class="row"><span class="nm">Térmica</span><span class="track"><i style="width:48%;background:var(--solar)"></i></span><span class="pct">48%</span></div>
+          </div>
+          <p>Pese al enorme potencial solar (con máximos de <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>9,85</mn><mo>&#8201;</mo><mfrac><mi>kWh</mi><msup><mi>m</mi><mn>2</mn></msup></mfrac></math>), la matriz nacional sigue siendo predominantemente <b>no renovable</b>. Aprovechar plenamente el recurso regional sigue siendo el gran desafío frente a la infraestructura térmica instalada.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SLIDE 15 · BIBLIOGRAFÍA / CIERRE ===================== -->
+  <section class="slide">
+    <div class="wrap">
+      <div class="s-head">
+        <div>
+          <div class="kicker">15 · Cierre</div>
+          <h1 class="s-title">Bibliografía y <span class="hi">fuentes</span></h1>
+        </div>
+        <div class="s-meta">IMRSC · 7.º Informática B<br>Comisión 5</div>
+      </div>
+      <div class="closing">
+        <ol class="refs reveal" style="--d:1">
+          <li><span class="n">01</span><span class="t"><b>Secretaría de Energía de la Nación</b><span>Lámina «La Energía en la Argentina», abril 2020 — mapas de radiación solar, cuencas y centrales.</span></span></li>
+          <li><span class="n">02</span><span class="t"><b>CAMMESA</b><span>Sitio oficial y GeoSADI — demanda, generación real y flujos de potencia.</span></span></li>
+          <li><span class="n">03</span><span class="t"><b>ENRE</b><span>Documentos sobre regulación y control del transporte de energía.</span></span></li>
+          <li><span class="n">04</span><span class="t"><b>Esquemas Técnicos del MEM</b><span>Infografías MEM 01 y MEM 02 — roles de CAMMESA, ENRE y distribución.</span></span></li>
+          <li><span class="n">05</span><span class="t"><b>ZMS Cable / Structuralia</b><span>Manual de Aisladores y Materiales Eléctricos, 2024.</span></span></li>
+        </ol>
+        <div class="endcard reveal" style="--d:2">
+          <div class="eyebrow">Fin de la presentación</div>
+          <h2>Energía que <span class="hi">recorre Cuyo</span></h2>
+          <p>De los Andes al tomacorriente: un sistema mallado que integra generación hídrica, solar y térmica con la red nacional, sostenido por una coordinación técnica y regulatoria de alta precisión.</p>
+          <div class="sign">Mia Niello · Milagros Camino · Tatiana Bravo · Catalina Quintana · Nicolás Perri<br><b>Gracias.</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ===================== NAVEGACIÓN ===================== -->
+<div class="nav">
+  <div class="brand"><b>CUYO</b> · Sistema Eléctrico</div>
+  <div class="progress"><span id="prog"></span></div>
+  <div class="counter"><b id="cur">01</b> / <span id="tot">15</span></div>
+  <div class="nav-btns">
+    <button id="prev" aria-label="Anterior">‹</button>
+    <button id="next" aria-label="Siguiente">›</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  var i = 0, n = slides.length;
+  var prog = document.getElementById('prog');
+  var cur = document.getElementById('cur');
+  var prev = document.getElementById('prev');
+  var next = document.getElementById('next');
+  document.getElementById('tot').textContent = String(n).padStart(2,'0');
+
+  function show(k){
+    i = Math.max(0, Math.min(n-1, k));
+    slides.forEach(function(s,idx){ s.classList.toggle('is-active', idx===i); });
+    prog.style.width = ((i+1)/n*100) + '%';
+    cur.textContent = String(i+1).padStart(2,'0');
+    prev.disabled = (i===0);
+    next.disabled = (i===n-1);
+    slides[i].scrollTop = 0;
+  }
+  function go(d){ show(i+d); }
+
+  prev.addEventListener('click', function(){ go(-1); });
+  next.addEventListener('click', function(){ go(1); });
+  document.addEventListener('keydown', function(e){
+    if(e.key==='ArrowRight'||e.key==='PageDown'){ e.preventDefault(); go(1); }
+    else if(e.key==='ArrowLeft'||e.key==='PageUp'){ e.preventDefault(); go(-1); }
+    else if(e.key===' '){ e.preventDefault(); go(1); }
+    else if(e.key==='Home'){ e.preventDefault(); show(0); }
+    else if(e.key==='End'){ e.preventDefault(); show(n-1); }
+  });
+  // gestos táctiles
+  var x0=null;
+  document.addEventListener('touchstart',function(e){ x0=e.touches[0].clientX; },{passive:true});
+  document.addEventListener('touchend',function(e){
+    if(x0===null) return;
+    var dx=e.changedTouches[0].clientX-x0;
+    if(Math.abs(dx)>55){ go(dx<0?1:-1); }
+    x0=null;
+  },{passive:true});
+
+  show(0);
+})();
+</script>
+</body>
+</html>
