@@ -13,7 +13,7 @@
 <div class="deck" id="deck">
 
   <!-- ===================== SLIDE 1 · CARÁTULA ===================== -->
-  <section class="slide cover is-active">
+  <section class="slide cover is-active" data-title="Carátula">
     <div class="wrap">
       <div class="cover-grid">
         <div>
@@ -32,6 +32,22 @@
           </div>
         </div>
         <div class="gauge reveal" style="--d:3">
+          <svg class="gauge-ticks" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(100,100)">
+              <line x1="0" y1="-88" x2="0" y2="-76" stroke="#2F4E73" stroke-width="2"/>
+              <line x1="0" y1="-88" x2="0" y2="-76" stroke="#2F4E73" stroke-width="2" transform="rotate(30)"/>
+              <line x1="0" y1="-88" x2="0" y2="-76" stroke="#2F4E73" stroke-width="2" transform="rotate(60)"/>
+              <line x1="0" y1="-88" x2="0" y2="-76" stroke="#26D6EE" stroke-width="2.5" transform="rotate(90)"/>
+              <line x1="0" y1="-88" x2="0" y2="-76" stroke="#2F4E73" stroke-width="2" transform="rotate(120)"/>
+              <line x1="0" y1="-88" x2="0" y2="-76" stroke="#2F4E73" stroke-width="2" transform="rotate(150)"/>
+              <line x1="0" y1="-88" x2="0" y2="-76" stroke="#2F4E73" stroke-width="2" transform="rotate(180)"/>
+              <line x1="0" y1="-88" x2="0" y2="-76" stroke="#2F4E73" stroke-width="2" transform="rotate(210)"/>
+              <line x1="0" y1="-88" x2="0" y2="-76" stroke="#2F4E73" stroke-width="2" transform="rotate(240)"/>
+              <line x1="0" y1="-88" x2="0" y2="-76" stroke="#26D6EE" stroke-width="2.5" transform="rotate(270)"/>
+              <line x1="0" y1="-88" x2="0" y2="-76" stroke="#2F4E73" stroke-width="2" transform="rotate(300)"/>
+              <line x1="0" y1="-88" x2="0" y2="-76" stroke="#2F4E73" stroke-width="2" transform="rotate(330)"/>
+            </g>
+          </svg>
           <div class="ring"></div>
           <div class="ring r2"></div>
           <div class="core">
@@ -44,7 +60,7 @@
   </section>
 
   <!-- ===================== SLIDE 2 · MARCO INSTITUCIONAL ===================== -->
-  <section class="slide">
+  <section class="slide" data-title="Marco Institucional">
     <div class="wrap">
       <div class="s-head">
         <div>
@@ -77,7 +93,7 @@
   </section>
 
   <!-- ===================== SLIDE 3 · TRANSPORTE ===================== -->
-  <section class="slide">
+  <section class="slide" data-title="Infraestructura de Transporte">
     <div class="wrap">
       <div class="s-head">
         <div>
@@ -117,7 +133,7 @@
   </section>
 
   <!-- ===================== SLIDE 4 · POTRERILLOS ===================== -->
-  <section class="slide accent-hydro">
+  <section class="slide accent-hydro" data-title="Central Potrerillos">
     <div class="wrap">
       <div class="s-head">
         <div>
@@ -146,18 +162,55 @@
             <li><span class="k">Inyección SADI</span><span class="val">Genera en media tensión y eleva a <b>132&nbsp;kV</b> en su Estación Transformadora propia hacia la red de Distrocuyo.</span></li>
           </ul>
         </div>
-        <div class="imgph reveal" style="--d:3">
-          <div class="ph-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M3 17l5-4 4 3 4-4 5 4"/></svg></div>
-          <div class="ph-tag">Imagen 01</div>
-          <div class="ph-q">central hidroeléctrica Potrerillos Mendoza embalse</div>
-          <div class="ph-d">Vista del embalse y la presa con la cordillera de fondo; o casa de máquinas con turbinas Francis.</div>
+        <div class="imgph imgph--hydro reveal" style="--d:3">
+          <svg class="il" viewBox="0 0 340 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="sky4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#060e1c"/><stop offset="1" stop-color="#0d1e34"/></linearGradient>
+              <linearGradient id="res4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3FA9F5" stop-opacity=".4"/><stop offset="1" stop-color="#1a3d66" stop-opacity=".2"/></linearGradient>
+            </defs>
+            <rect width="340" height="200" fill="url(#sky4)"/>
+            <!-- Montaña izquierda -->
+            <polygon points="0,200 0,80 80,28 145,90 160,200" fill="#071525"/>
+            <!-- Montaña derecha -->
+            <polygon points="340,200 340,72 260,20 195,82 180,200" fill="#071525"/>
+            <!-- Nieves -->
+            <polygon points="80,28 72,50 88,50" fill="rgba(215,235,255,.55)"/>
+            <polygon points="260,20 251,44 269,44" fill="rgba(215,235,255,.55)"/>
+            <!-- Embalse -->
+            <rect x="0" y="108" width="162" height="92" fill="url(#res4)"/>
+            <path d="M5 112 Q40 106 85 110 Q125 114 162 109" stroke="rgba(63,169,245,.65)" fill="none" stroke-width="1.3"/>
+            <!-- Presa -->
+            <rect x="162" y="80" width="18" height="120" fill="#1a3352"/>
+            <rect x="163" y="81" width="16" height="118" fill="#142840"/>
+            <line x1="171" y1="80" x2="171" y2="200" stroke="rgba(38,214,238,.18)" stroke-width="1"/>
+            <!-- Turbinas -->
+            <circle cx="171" cy="120" r="8" fill="#0a1830" stroke="#3FA9F5" stroke-width="1.4"/>
+            <line x1="166" y1="120" x2="176" y2="120" stroke="#3FA9F5" stroke-width="1" opacity=".7"/>
+            <line x1="171" y1="115" x2="171" y2="125" stroke="#3FA9F5" stroke-width="1" opacity=".7"/>
+            <circle cx="171" cy="145" r="8" fill="#0a1830" stroke="#3FA9F5" stroke-width="1.4"/>
+            <line x1="166" y1="145" x2="176" y2="145" stroke="#3FA9F5" stroke-width="1" opacity=".7"/>
+            <line x1="171" y1="140" x2="171" y2="150" stroke="#3FA9F5" stroke-width="1" opacity=".7"/>
+            <!-- Río aguas abajo -->
+            <path d="M180 152 Q215 148 255 153 Q285 156 315 151" stroke="rgba(63,169,245,.5)" fill="none" stroke-width="1.6"/>
+            <path d="M180 164 Q220 160 260 165 Q295 168 325 163" stroke="rgba(63,169,245,.35)" fill="none" stroke-width="1.2"/>
+            <!-- Línea de potencia -->
+            <line x1="171" y1="80" x2="171" y2="46" stroke="rgba(38,214,238,.5)" stroke-width="1.2" stroke-dasharray="5 4"/>
+            <line x1="171" y1="46" x2="280" y2="22" stroke="rgba(38,214,238,.4)" stroke-width="1.2" stroke-dasharray="5 4"/>
+            <!-- Torre -->
+            <path d="M276 22 L280 8 L284 22 M278 16 L282 16" stroke="#26D6EE" stroke-width="1.4" fill="none"/>
+            <!-- Etiquetas -->
+            <text x="80" y="138" font-family="monospace" font-size="8" fill="rgba(63,169,245,.75)" text-anchor="middle" letter-spacing="2">EMBALSE</text>
+            <text x="245" y="175" font-family="monospace" font-size="7.5" fill="rgba(63,169,245,.55)" text-anchor="middle" letter-spacing="1.5">RÍO MENDOZA</text>
+            <text x="268" y="34" font-family="monospace" font-size="8" fill="rgba(38,214,238,.8)" letter-spacing="1.5">132 kV</text>
+          </svg>
+          <div class="il-cap"><b>C. Hidroeléctrica Potrerillos</b>Embalse · Turbinas Francis · 181 MW</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ===================== SLIDE 5 · ULLUM ===================== -->
-  <section class="slide">
+  <section class="slide" data-title="Parque Solar Ullum">
     <div class="wrap">
       <div class="s-head">
         <div>
@@ -186,18 +239,101 @@
             <li><span class="k">Inyección SADI</span><span class="val">Inversores entregan en 33&nbsp;kV; la ET Solar San Juan eleva a <math xmlns="http://www.w3.org/1998/Math/MathML"><mn>33</mn><mo>&#8201;</mo><mi>kV</mi><mo>→</mo><mn>132</mn><mo>&#8201;</mo><mi>kV</mi></math> hacia Punta Negra.</span></li>
           </ul>
         </div>
-        <div class="imgph reveal" style="--d:3">
-          <div class="ph-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M3 17l5-4 4 3 4-4 5 4"/></svg></div>
-          <div class="ph-tag">Imagen 02</div>
-          <div class="ph-q">parque solar fotovoltaico Ullum San Juan paneles</div>
-          <div class="ph-d">Vista aérea de hileras de paneles monocristalinos en terreno árido con la precordillera de fondo.</div>
+        <div class="imgph imgph--solar reveal" style="--d:3">
+          <svg class="il" viewBox="0 0 340 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="sky5" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#100c00"/><stop offset="1" stop-color="#1a1400"/></linearGradient>
+              <linearGradient id="sol5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FBBE2C" stop-opacity=".7"/><stop offset="1" stop-color="#e07a10" stop-opacity=".5"/></linearGradient>
+            </defs>
+            <rect width="340" height="200" fill="url(#sky5)"/>
+            <!-- Terreno árido -->
+            <rect x="0" y="155" width="340" height="45" fill="#0f0c04"/>
+            <path d="M0 155 Q85 150 170 155 Q255 160 340 155" fill="#140f04"/>
+            <!-- Sol (top-right) -->
+            <circle cx="298" cy="36" r="18" fill="rgba(251,190,44,.18)" stroke="rgba(251,190,44,.45)" stroke-width="1"/>
+            <circle cx="298" cy="36" r="12" fill="rgba(251,190,44,.22)"/>
+            <circle cx="298" cy="36" r="7" fill="rgba(251,190,44,.5)"/>
+            <!-- Rayos solares -->
+            <line x1="298" y1="10" x2="298" y2="16" stroke="rgba(251,190,44,.4)" stroke-width="1.2"/>
+            <line x1="298" y1="56" x2="298" y2="62" stroke="rgba(251,190,44,.4)" stroke-width="1.2"/>
+            <line x1="272" y1="36" x2="278" y2="36" stroke="rgba(251,190,44,.4)" stroke-width="1.2"/>
+            <line x1="318" y1="36" x2="324" y2="36" stroke="rgba(251,190,44,.4)" stroke-width="1.2"/>
+            <line x1="280" y1="18" x2="284" y2="22" stroke="rgba(251,190,44,.3)" stroke-width="1.2"/>
+            <line x1="312" y1="50" x2="316" y2="54" stroke="rgba(251,190,44,.3)" stroke-width="1.2"/>
+            <!-- Grid de paneles solares (5 columnas × 4 filas) -->
+            <!-- Fila 1 -->
+            <rect x="14" y="26" width="44" height="26" rx="2" fill="rgba(30,50,90,.85)" stroke="rgba(251,190,44,.5)" stroke-width="1"/>
+            <line x1="14" y1="39" x2="58" y2="39" stroke="rgba(251,190,44,.2)" stroke-width=".7"/>
+            <line x1="29" y1="26" x2="29" y2="52" stroke="rgba(251,190,44,.2)" stroke-width=".7"/>
+            <line x1="44" y1="26" x2="44" y2="52" stroke="rgba(251,190,44,.2)" stroke-width=".7"/>
+
+            <rect x="66" y="26" width="44" height="26" rx="2" fill="rgba(30,50,90,.85)" stroke="rgba(251,190,44,.5)" stroke-width="1"/>
+            <line x1="66" y1="39" x2="110" y2="39" stroke="rgba(251,190,44,.2)" stroke-width=".7"/>
+            <line x1="81" y1="26" x2="81" y2="52" stroke="rgba(251,190,44,.2)" stroke-width=".7"/>
+            <line x1="96" y1="26" x2="96" y2="52" stroke="rgba(251,190,44,.2)" stroke-width=".7"/>
+
+            <rect x="118" y="26" width="44" height="26" rx="2" fill="rgba(30,50,90,.85)" stroke="rgba(251,190,44,.5)" stroke-width="1"/>
+            <line x1="118" y1="39" x2="162" y2="39" stroke="rgba(251,190,44,.2)" stroke-width=".7"/>
+            <line x1="133" y1="26" x2="133" y2="52" stroke="rgba(251,190,44,.2)" stroke-width=".7"/>
+            <line x1="148" y1="26" x2="148" y2="52" stroke="rgba(251,190,44,.2)" stroke-width=".7"/>
+
+            <rect x="170" y="26" width="44" height="26" rx="2" fill="rgba(30,50,90,.85)" stroke="rgba(251,190,44,.4)" stroke-width="1"/>
+            <line x1="170" y1="39" x2="214" y2="39" stroke="rgba(251,190,44,.18)" stroke-width=".7"/>
+            <line x1="185" y1="26" x2="185" y2="52" stroke="rgba(251,190,44,.18)" stroke-width=".7"/>
+            <line x1="200" y1="26" x2="200" y2="52" stroke="rgba(251,190,44,.18)" stroke-width=".7"/>
+
+            <!-- Fila 2 -->
+            <rect x="14" y="60" width="44" height="26" rx="2" fill="rgba(30,50,90,.8)" stroke="rgba(251,190,44,.45)" stroke-width="1"/>
+            <line x1="14" y1="73" x2="58" y2="73" stroke="rgba(251,190,44,.2)" stroke-width=".7"/>
+            <line x1="29" y1="60" x2="29" y2="86" stroke="rgba(251,190,44,.2)" stroke-width=".7"/>
+            <line x1="44" y1="60" x2="44" y2="86" stroke="rgba(251,190,44,.2)" stroke-width=".7"/>
+
+            <rect x="66" y="60" width="44" height="26" rx="2" fill="rgba(30,50,90,.8)" stroke="rgba(251,190,44,.45)" stroke-width="1"/>
+            <line x1="66" y1="73" x2="110" y2="73" stroke="rgba(251,190,44,.2)" stroke-width=".7"/>
+            <line x1="81" y1="60" x2="81" y2="86" stroke="rgba(251,190,44,.2)" stroke-width=".7"/>
+            <line x1="96" y1="60" x2="96" y2="86" stroke="rgba(251,190,44,.2)" stroke-width=".7"/>
+
+            <rect x="118" y="60" width="44" height="26" rx="2" fill="rgba(30,50,90,.8)" stroke="rgba(251,190,44,.45)" stroke-width="1"/>
+            <line x1="118" y1="73" x2="162" y2="73" stroke="rgba(251,190,44,.2)" stroke-width=".7"/>
+            <line x1="133" y1="60" x2="133" y2="86" stroke="rgba(251,190,44,.2)" stroke-width=".7"/>
+            <line x1="148" y1="60" x2="148" y2="86" stroke="rgba(251,190,44,.2)" stroke-width=".7"/>
+
+            <rect x="170" y="60" width="44" height="26" rx="2" fill="rgba(30,50,90,.75)" stroke="rgba(251,190,44,.35)" stroke-width="1"/>
+            <line x1="170" y1="73" x2="214" y2="73" stroke="rgba(251,190,44,.18)" stroke-width=".7"/>
+            <line x1="185" y1="60" x2="185" y2="86" stroke="rgba(251,190,44,.18)" stroke-width=".7"/>
+            <line x1="200" y1="60" x2="200" y2="86" stroke="rgba(251,190,44,.18)" stroke-width=".7"/>
+
+            <!-- Fila 3 -->
+            <rect x="14" y="94" width="44" height="26" rx="2" fill="rgba(30,50,90,.7)" stroke="rgba(251,190,44,.35)" stroke-width="1"/>
+            <line x1="14" y1="107" x2="58" y2="107" stroke="rgba(251,190,44,.15)" stroke-width=".7"/>
+            <line x1="29" y1="94" x2="29" y2="120" stroke="rgba(251,190,44,.15)" stroke-width=".7"/>
+            <line x1="44" y1="94" x2="44" y2="120" stroke="rgba(251,190,44,.15)" stroke-width=".7"/>
+
+            <rect x="66" y="94" width="44" height="26" rx="2" fill="rgba(30,50,90,.7)" stroke="rgba(251,190,44,.35)" stroke-width="1"/>
+            <line x1="66" y1="107" x2="110" y2="107" stroke="rgba(251,190,44,.15)" stroke-width=".7"/>
+            <line x1="81" y1="94" x2="81" y2="120" stroke="rgba(251,190,44,.15)" stroke-width=".7"/>
+            <line x1="96" y1="94" x2="96" y2="120" stroke="rgba(251,190,44,.15)" stroke-width=".7"/>
+
+            <rect x="118" y="94" width="44" height="26" rx="2" fill="rgba(30,50,90,.65)" stroke="rgba(251,190,44,.28)" stroke-width="1"/>
+            <rect x="170" y="94" width="44" height="26" rx="2" fill="rgba(30,50,90,.6)" stroke="rgba(251,190,44,.22)" stroke-width="1"/>
+
+            <!-- Inversor / caja eléctrica -->
+            <rect x="228" y="80" width="32" height="48" rx="4" fill="#0f1e33" stroke="rgba(251,190,44,.5)" stroke-width="1.2"/>
+            <text x="244" y="100" font-family="monospace" font-size="7" fill="rgba(251,190,44,.8)" text-anchor="middle">INV</text>
+            <text x="244" y="112" font-family="monospace" font-size="6.5" fill="rgba(251,190,44,.55)" text-anchor="middle">CC→CA</text>
+            <!-- Flecha salida -->
+            <line x1="260" y1="104" x2="290" y2="104" stroke="rgba(38,214,238,.6)" stroke-width="1.5"/>
+            <polygon points="290,100 298,104 290,108" fill="rgba(38,214,238,.6)"/>
+            <text x="299" y="100" font-family="monospace" font-size="7.5" fill="rgba(38,214,238,.8)" letter-spacing="1">33 kV</text>
+          </svg>
+          <div class="il-cap"><b>Parque Solar Ullum — San Juan</b>283.000 paneles monocristalinos · 82 MW (bloque principal)</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ===================== SLIDE 6 · MATRIZ COMPARATIVA ===================== -->
-  <section class="slide">
+  <section class="slide" data-title="Matriz Comparativa">
     <div class="wrap">
       <div class="s-head">
         <div>
@@ -248,7 +384,7 @@
   </section>
 
   <!-- ===================== SLIDE 7 · TÉRMICA / CUENCA CUYANA ===================== -->
-  <section class="slide">
+  <section class="slide" data-title="Energía Térmica">
     <div class="wrap">
       <div class="s-head">
         <div>
@@ -290,7 +426,7 @@
   </section>
 
   <!-- ===================== SLIDE 8 · CAMINO ENERGÍA 1-3 ===================== -->
-  <section class="slide">
+  <section class="slide" data-title="Camino de la Energía · 1→3">
     <div class="wrap">
       <div class="s-head">
         <div>
@@ -325,15 +461,55 @@
           <div class="volt"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>132</mn><mo>&#8201;</mo><mi>kV</mi></math><small>Red regional</small></div>
         </div>
       </div>
-      <div class="imgph reveal" style="--d:4;min-height:0;flex-direction:row;align-items:center;gap:18px;margin-top:8px">
-        <div class="ph-ico" style="position:static"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2L4 22M12 2l8 20M7 8h10M5 15h14"/></svg></div>
-        <div><div class="ph-q" style="margin-bottom:3px">torres de alta tensión 132 kV líneas Cuyo cordillera</div><div class="ph-d">Líneas de transmisión cruzando el paisaje cuyano de montaña.</div></div>
+      <div class="imgph imgph--lines reveal" style="--d:4;min-height:72px;margin-top:8px">
+        <svg class="il" viewBox="0 0 680 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <linearGradient id="sky8" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#060c16"/><stop offset="1" stop-color="#0a1626"/></linearGradient>
+          </defs>
+          <rect width="680" height="120" fill="url(#sky8)"/>
+          <!-- Silueta montañas -->
+          <polygon points="0,120 0,55 60,20 120,60 200,30 280,65 340,120" fill="#071222"/>
+          <polygon points="340,120 400,50 460,80 540,25 620,58 680,40 680,120" fill="#071222"/>
+          <!-- Nieve -->
+          <polygon points="200,30 192,46 208,46" fill="rgba(210,235,255,.45)"/>
+          <polygon points="540,25 532,42 548,42" fill="rgba(210,235,255,.45)"/>
+          <!-- Torre 1 -->
+          <line x1="118" y1="95" x2="108" y2="30" stroke="#2F4E73" stroke-width="1.8"/>
+          <line x1="118" y1="95" x2="128" y2="30" stroke="#2F4E73" stroke-width="1.8"/>
+          <line x1="113" y1="60" x2="123" y2="60" stroke="#2F4E73" stroke-width="1.4"/>
+          <line x1="105" y1="30" x2="131" y2="30" stroke="#26D6EE" stroke-width="1.8"/>
+          <line x1="103" y1="38" x2="133" y2="38" stroke="#26D6EE" stroke-width="1.4"/>
+          <!-- Torre 2 -->
+          <line x1="340" y1="95" x2="330" y2="22" stroke="#2F4E73" stroke-width="1.8"/>
+          <line x1="340" y1="95" x2="350" y2="22" stroke="#2F4E73" stroke-width="1.8"/>
+          <line x1="335" y1="58" x2="345" y2="58" stroke="#2F4E73" stroke-width="1.4"/>
+          <line x1="327" y1="22" x2="353" y2="22" stroke="#26D6EE" stroke-width="1.8"/>
+          <line x1="325" y1="30" x2="355" y2="30" stroke="#26D6EE" stroke-width="1.4"/>
+          <!-- Torre 3 -->
+          <line x1="562" y1="95" x2="552" y2="30" stroke="#2F4E73" stroke-width="1.8"/>
+          <line x1="562" y1="95" x2="572" y2="30" stroke="#2F4E73" stroke-width="1.8"/>
+          <line x1="557" y1="60" x2="567" y2="60" stroke="#2F4E73" stroke-width="1.4"/>
+          <line x1="549" y1="30" x2="575" y2="30" stroke="#26D6EE" stroke-width="1.8"/>
+          <line x1="547" y1="38" x2="577" y2="38" stroke="#26D6EE" stroke-width="1.4"/>
+          <!-- Catenarias (cables) superior -->
+          <path d="M105 30 Q220 55 330 22" stroke="rgba(38,214,238,.55)" fill="none" stroke-width="1.3"/>
+          <path d="M327 22 Q444 52 549 30" stroke="rgba(38,214,238,.55)" fill="none" stroke-width="1.3"/>
+          <path d="M0 20 Q55 38 105 30" stroke="rgba(38,214,238,.35)" fill="none" stroke-width="1.3" stroke-dasharray="6 4"/>
+          <path d="M575 30 Q628 40 680 28" stroke="rgba(38,214,238,.35)" fill="none" stroke-width="1.3" stroke-dasharray="6 4"/>
+          <!-- Catenarias inferior -->
+          <path d="M103 38 Q220 62 325 30" stroke="rgba(38,214,238,.38)" fill="none" stroke-width="1"/>
+          <path d="M325 30 Q444 58 547 38" stroke="rgba(38,214,238,.38)" fill="none" stroke-width="1"/>
+          <!-- Etiqueta voltaje -->
+          <rect x="288" y="6" width="104" height="20" rx="4" fill="rgba(38,214,238,.1)" stroke="rgba(38,214,238,.35)" stroke-width="1"/>
+          <text x="340" y="19" font-family="monospace" font-size="9" fill="#26D6EE" text-anchor="middle" letter-spacing="2">DISTROCUYO · 132 kV</text>
+        </svg>
+        <div class="il-cap"><b>Red de Transporte Regional</b>Torres de alta tensión · Cuyo</div>
       </div>
     </div>
   </section>
 
   <!-- ===================== SLIDE 9 · CAMINO ENERGÍA 4-5 ===================== -->
-  <section class="slide">
+  <section class="slide" data-title="Camino de la Energía · 4→6">
     <div class="wrap">
       <div class="s-head">
         <div>
@@ -376,7 +552,7 @@
   </section>
 
   <!-- ===================== SLIDE 10 · FACTURA P1 ===================== -->
-  <section class="slide">
+  <section class="slide" data-title="Análisis de Factura EDEMSA · 1/2">
     <div class="wrap">
       <div class="s-head">
         <div>
@@ -424,7 +600,7 @@
   </section>
 
   <!-- ===================== SLIDE 11 · FACTURA P2 ===================== -->
-  <section class="slide">
+  <section class="slide" data-title="Análisis de Factura EDEMSA · 2/2">
     <div class="wrap">
       <div class="s-head">
         <div>
@@ -468,7 +644,7 @@
   </section>
 
   <!-- ===================== SLIDE 12 · CRÍTICA: DAG ===================== -->
-  <section class="slide">
+  <section class="slide" data-title="Fragilidad · DAG Gran Mendoza">
     <div class="wrap">
       <div class="s-head">
         <div>
@@ -498,7 +674,7 @@
   </section>
 
   <!-- ===================== SLIDE 13 · DESAFÍOS GEOGRÁFICOS ===================== -->
-  <section class="slide">
+  <section class="slide" data-title="Desafíos Geográficos">
     <div class="wrap">
       <div class="s-head">
         <div>
@@ -528,7 +704,7 @@
   </section>
 
   <!-- ===================== SLIDE 14 · DEBILIDADES ECONÓMICAS ===================== -->
-  <section class="slide">
+  <section class="slide" data-title="Debilidades Económicas">
     <div class="wrap">
       <div class="s-head">
         <div>
@@ -555,7 +731,7 @@
   </section>
 
   <!-- ===================== SLIDE 15 · BIBLIOGRAFÍA / CIERRE ===================== -->
-  <section class="slide">
+  <section class="slide" data-title="Bibliografía y Cierre">
     <div class="wrap">
       <div class="s-head">
         <div>
@@ -587,7 +763,8 @@
 <!-- ===================== NAVEGACIÓN ===================== -->
 <div class="nav">
   <div class="brand"><b>CUYO</b> · Sistema Eléctrico</div>
-  <div class="progress"><span id="prog"></span></div>
+  <div class="nav-dots" id="navDots"></div>
+  <div class="nav-title" id="navTitle"></div>
   <div class="counter"><b id="cur">01</b> / <span id="tot">15</span></div>
   <div class="nav-btns">
     <button id="prev" aria-label="Anterior">‹</button>
@@ -599,22 +776,43 @@
 (function(){
   var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
   var i = 0, n = slides.length;
-  var prog = document.getElementById('prog');
   var cur = document.getElementById('cur');
   var prev = document.getElementById('prev');
   var next = document.getElementById('next');
+  var navDots = document.getElementById('navDots');
+  var navTitle = document.getElementById('navTitle');
   document.getElementById('tot').textContent = String(n).padStart(2,'0');
 
-  function show(k){
+  // Generar dots
+  var dots = slides.map(function(s, idx){
+    var btn = document.createElement('button');
+    btn.className = 'nav-dot';
+    btn.setAttribute('aria-label', 'Slide ' + (idx+1));
+    btn.addEventListener('click', function(){ show(idx); });
+    navDots.appendChild(btn);
+    return btn;
+  });
+
+  function show(k, dir){
+    var prev_i = i;
     i = Math.max(0, Math.min(n-1, k));
-    slides.forEach(function(s,idx){ s.classList.toggle('is-active', idx===i); });
-    prog.style.width = ((i+1)/n*100) + '%';
+    var going_back = (dir === -1) || (k < prev_i && dir === undefined);
+    slides.forEach(function(s, idx){
+      s.classList.remove('is-active','exit-back');
+      if(idx === i){
+        s.classList.add('is-active');
+      } else if(idx === prev_i && going_back){
+        s.classList.add('exit-back');
+      }
+    });
+    dots.forEach(function(d, idx){ d.classList.toggle('is-active', idx===i); });
+    navTitle.textContent = slides[i].getAttribute('data-title') || '';
     cur.textContent = String(i+1).padStart(2,'0');
     prev.disabled = (i===0);
     next.disabled = (i===n-1);
     slides[i].scrollTop = 0;
   }
-  function go(d){ show(i+d); }
+  function go(d){ show(i+d, d); }
 
   prev.addEventListener('click', function(){ go(-1); });
   next.addEventListener('click', function(){ go(1); });
