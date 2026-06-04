@@ -237,6 +237,7 @@ math{font-family:var(--ff-mono);font-size:1.02em;color:var(--cyan-2)}
 .tile p{font-size:14px;line-height:1.55;color:var(--ink-dim)}
 .tile p b{color:var(--ink-2);font-weight:600}
 .tile.wide{grid-column:1/-1;flex-direction:row;align-items:center;gap:22px;background:linear-gradient(90deg,var(--panel-2),var(--panel))}
+.tile.span2{grid-column:span 2}
 .tile.wide p{flex:1}
 
 /* ============================================================
@@ -266,7 +267,6 @@ math{font-family:var(--ff-mono);font-size:1.02em;color:var(--cyan-2)}
 .ficha-main{display:flex;flex-direction:column;gap:16px;min-height:0}
 .ficha-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
 .ficha-stats .stat{border-radius:var(--r-sm)}
-.accent-hydro .v,.accent-hydro .lvl,.accent-hydro .hl,.accent-hydro .kicker,.accent-hydro .kicker::before{ }
 .energy-strip{height:5px;border-radius:6px;background:var(--cyan)}
 .h-bar{background:linear-gradient(90deg,var(--hydro),#7fd0ff)}
 .s-bar{background:linear-gradient(90deg,var(--solar),#ffd873)}
