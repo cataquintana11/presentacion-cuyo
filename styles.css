@@ -359,7 +359,7 @@ math{font-family:var(--ff-mono);font-size:1.02em;color:var(--cyan-2)}
 /* ============================================================
    FACTURA EDEMSA (Slides 10 y 11)
    ============================================================ */
-.bill-layout{display:grid;grid-template-columns:.95fr 1.05fr;gap:22px;flex:1;min-height:0}
+.bill-layout{display:grid;grid-template-columns:.58fr 1.42fr;gap:24px;flex:1;min-height:0}
 .bill{background:#F4F7FB;color:#1a2433;border-radius:var(--r);padding:22px 24px;font-size:12.5px;position:relative;overflow:hidden;box-shadow:0 18px 40px rgba(0,0,0,.35)}
 .bill::before{content:"";position:absolute;top:0;left:0;right:0;height:7px;background:linear-gradient(90deg,#0B3D91,#1565C0)}
 .bill .b-top{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:2px solid #d3dded;padding-bottom:14px;margin-bottom:14px}
@@ -380,9 +380,9 @@ math{font-family:var(--ff-mono);font-size:1.02em;color:var(--cyan-2)}
 .bill .b-rows tr.tot td{border-bottom:none;border-top:2px solid #0B3D91;font-weight:800;font-size:15px;padding-top:11px;color:#0B3D91}
 .bill .b-chip{display:inline-block;background:#0B3D91;color:#fff;font-family:var(--ff-mono);font-size:10px;padding:3px 9px;border-radius:5px;letter-spacing:.06em}
 
-.bill-notes{display:flex;flex-direction:column;gap:14px;min-height:0}
-.callout{padding:16px 18px;border-left:3px solid var(--cyan)}
-.callout h4{font-family:var(--ff-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--cyan);margin-bottom:7px}
+.bill-notes{display:flex;flex-direction:column;gap:10px;min-height:0}
+.callout{padding:13px 20px;border-left:3px solid var(--cyan)}
+.callout h4{font-family:var(--ff-mono);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--cyan);margin-bottom:8px}
 .callout p{font-size:15.5px;line-height:1.6;color:var(--ink-2)}
 .callout p b{color:var(--ink)}
 .codebox{display:flex;gap:10px;flex-wrap:wrap}
@@ -447,6 +447,69 @@ math{font-family:var(--ff-mono);font-size:1.02em;color:var(--cyan-2)}
 /* gauge ticks (cover) */
 .gauge-ticks{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}
 
+/* ============================================================
+   FOTOS COMPARATIVAS (Slide 3 — bajo la tabla)
+   ============================================================ */
+.comp-photos{display:grid;grid-template-columns:1fr 1fr;gap:12px;height:150px;margin-top:12px}
+.comp-photo{border-radius:var(--r-sm);overflow:hidden;position:relative;border:1px solid var(--line-bright)}
+.comp-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.comp-photo figcaption{
+  position:absolute;bottom:0;left:0;right:0;
+  padding:8px 12px;
+  background:linear-gradient(0deg,rgba(6,12,22,.92) 50%,transparent);
+  font-family:var(--ff-mono);font-size:10px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-dim);
+}
+.comp-photo figcaption b{color:var(--ink-2);display:block;margin-bottom:2px;font-size:11px}
+
+/* ============================================================
+   IMAGEN REAL EN IMGPH (reemplaza SVG)
+   ============================================================ */
+.imgph .il-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;opacity:.85}
+
+/* ============================================================
+   FOTO DE BOLETA — slides Factura
+   ============================================================ */
+.bill-photo{
+  border-radius:var(--r);overflow:hidden;
+  border:1.5px solid var(--line-bright);
+  background:#e8edf5;
+  align-self:start;
+}
+.bill-img{width:100%;height:auto;display:block}
+
+/* ============================================================
+   LIGHTBOX
+   ============================================================ */
+.lightbox{
+  position:fixed;inset:0;z-index:200;
+  background:rgba(6,12,22,.93);
+  display:none;align-items:center;justify-content:center;
+  padding:24px;backdrop-filter:blur(4px);
+}
+.lightbox.is-open{display:flex}
+.lightbox-img{
+  max-width:90vw;max-height:88vh;
+  object-fit:contain;border-radius:10px;
+  box-shadow:0 0 80px rgba(0,0,0,.7);display:block;
+}
+.lightbox-close{
+  position:absolute;top:18px;right:22px;
+  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);
+  color:#EAF2FB;font-size:20px;cursor:pointer;line-height:1;
+  width:44px;height:44px;border-radius:50%;
+  display:grid;place-items:center;
+  transition:background .2s,border-color .2s;
+}
+.lightbox-close:hover{background:rgba(38,214,238,.25);border-color:var(--cyan);color:var(--cyan)}
+.lightbox-hint{
+  position:absolute;bottom:20px;left:50%;transform:translateX(-50%);
+  font-family:var(--ff-mono);font-size:11px;color:rgba(194,212,234,.45);
+  letter-spacing:.1em;pointer-events:none;
+}
+/* cursor pointer en imágenes clicables */
+.zoomable{cursor:zoom-in}
+
 /* hint de teclado */
 .kbd-hint{position:fixed;top:20px;right:22px;z-index:30;font-family:var(--ff-mono);font-size:10px;color:var(--ink-faint);letter-spacing:.1em;display:flex;gap:8px;align-items:center;opacity:.7}
 .kbd-hint b{border:1px solid var(--line-bright);border-radius:4px;padding:2px 7px;color:var(--ink-dim)}
@@ -456,7 +519,9 @@ math{font-family:var(--ff-mono);font-size:1.02em;color:var(--cyan-2)}
    ============================================================ */
 @media (max-width:900px){
   .cover-grid,.ficha,.split2,.grid2,.dag-box,.bill-layout,.closing{grid-template-columns:1fr}
-  .tiles,.grid3{grid-template-columns:1fr}
+  .tiles,.grid3,.comp-photos{grid-template-columns:1fr}
+  .comp-photos{height:auto}
+  .comp-photo{height:140px}
   .versus{grid-template-columns:1fr}
   .vs-mid{display:none}
   .gauge{display:none}
