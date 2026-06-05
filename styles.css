@@ -134,9 +134,12 @@ body::after{
   position:fixed;left:0;right:0;bottom:0;z-index:30;height:64px;
   display:flex;align-items:center;gap:18px;
   padding:0 clamp(20px,4vw,46px);
-  background:linear-gradient(0deg,var(--bg-deep),rgba(6,12,22,.4));
-  border-top:1px solid var(--line);backdrop-filter:blur(6px);
+  background:linear-gradient(0deg,var(--bg-deep),rgba(6,12,22,.88));
+  border-top:1px solid var(--line);backdrop-filter:blur(8px);
+  transform:translateY(calc(100% - 3px));
+  transition:transform .35s cubic-bezier(.22,1,.36,1);
 }
+.nav:hover{transform:translateY(0)}
 .nav .brand{font-family:var(--ff-mono);font-size:11px;letter-spacing:.18em;color:var(--ink-faint);text-transform:uppercase}
 .nav .brand b{color:var(--cyan)}
 .nav-dots{flex:1;display:flex;align-items:center;gap:5px;padding:0 14px;overflow:hidden}
@@ -178,7 +181,7 @@ body::after{
 }
 .dot{width:8px;height:8px;border-radius:50%;background:var(--cyan);box-shadow:0 0 8px var(--cyan-glow)}
 
-.lead{font-size:clamp(15px,1.55vw,18px);line-height:1.6;color:var(--ink-2);max-width:78ch}
+.lead{font-size:clamp(16px,1.75vw,21px);line-height:1.65;color:var(--ink-2);max-width:78ch}
 .lead b{color:var(--ink);font-weight:600}
 .hl{color:var(--cyan);font-weight:600}
 
@@ -258,7 +261,7 @@ math{font-family:var(--ff-mono);font-size:1.02em;color:var(--cyan-2)}
 .enre-bar{margin-top:18px;padding:16px 22px;display:flex;align-items:center;gap:16px;
   background:linear-gradient(90deg,rgba(38,214,238,.1),transparent);border:1px solid rgba(38,214,238,.3)}
 .enre-bar .tagn{font-family:var(--ff-display);font-weight:900;color:var(--cyan);font-size:20px}
-.enre-bar p{font-size:13.5px;color:var(--ink-dim);line-height:1.45}
+.enre-bar p{font-size:13.5px;color:var(--ink-2);line-height:1.45}
 
 /* ============================================================
    FICHA TÉCNICA (Slides 4 y 5)
@@ -346,8 +349,8 @@ math{font-family:var(--ff-mono);font-size:1.02em;color:var(--cyan-2)}
   border:1px solid var(--line);border-radius:var(--r);border-left:3px solid var(--cyan);position:relative;
   box-shadow:-4px 0 22px rgba(38,214,238,.1),0 4px 24px rgba(0,0,0,.45)}
 .step .num{font-family:var(--ff-display);font-weight:900;font-size:34px;color:var(--cyan);opacity:.6;line-height:1}
-.step .body h4{font-family:var(--ff-display);font-weight:700;font-size:17px;margin-bottom:5px}
-.step .body p{font-size:13.5px;color:var(--ink-dim);line-height:1.5}
+.step .body h4{font-family:var(--ff-display);font-weight:700;font-size:19px;margin-bottom:6px}
+.step .body p{font-size:15.5px;color:var(--ink-2);line-height:1.55}
 .step .body p b{color:var(--ink-2)}
 .step .volt{font-family:var(--ff-mono);font-size:15px;color:var(--cyan-2);text-align:right;white-space:nowrap;
   border:1px solid rgba(38,214,238,.3);padding:8px 14px;border-radius:9px;background:rgba(38,214,238,.07)}
@@ -380,7 +383,7 @@ math{font-family:var(--ff-mono);font-size:1.02em;color:var(--cyan-2)}
 .bill-notes{display:flex;flex-direction:column;gap:14px;min-height:0}
 .callout{padding:16px 18px;border-left:3px solid var(--cyan)}
 .callout h4{font-family:var(--ff-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--cyan);margin-bottom:7px}
-.callout p{font-size:13.5px;line-height:1.55;color:var(--ink-dim)}
+.callout p{font-size:15.5px;line-height:1.6;color:var(--ink-2)}
 .callout p b{color:var(--ink)}
 .codebox{display:flex;gap:10px;flex-wrap:wrap}
 .codebox .c{flex:1;min-width:130px;padding:14px 16px;background:var(--panel-2);border:1px solid var(--line-bright);border-radius:10px}
@@ -396,8 +399,8 @@ math{font-family:var(--ff-mono);font-size:1.02em;color:var(--cyan-2)}
 .issue{padding:24px;display:flex;flex-direction:column;gap:14px}
 .issue .ic{width:48px;height:48px;border-radius:12px;display:grid;place-items:center;font-size:22px;
   background:rgba(251,113,56,.12);border:1px solid rgba(251,113,56,.35);color:var(--thermal)}
-.issue h3{font-family:var(--ff-display);font-weight:800;font-size:20px;letter-spacing:-.01em}
-.issue p{font-size:13.5px;line-height:1.55;color:var(--ink-dim)}
+.issue h3{font-family:var(--ff-display);font-weight:800;font-size:22px;letter-spacing:-.01em}
+.issue p{font-size:15.5px;line-height:1.6;color:var(--ink-2)}
 .issue p b{color:var(--ink-2)}
 .issue.warn .ic{background:rgba(251,190,44,.12);border-color:rgba(251,190,44,.35);color:var(--solar)}
 .issue.info .ic{background:rgba(38,214,238,.1);border-color:rgba(38,214,238,.3);color:var(--cyan)}
@@ -409,7 +412,7 @@ math{font-family:var(--ff-mono);font-size:1.02em;color:var(--cyan-2)}
 .dag-vis .ring2::before{content:"";position:absolute;inset:-3px;border-radius:50%;border:3px solid transparent;border-top-color:var(--thermal);animation:spin 3.5s linear infinite}
 .dag-vis .ring2 b{font-family:var(--ff-display);font-weight:900;font-size:30px;color:var(--thermal)}
 .dag-vis .ring2 span{font-family:var(--ff-mono);font-size:10px;color:var(--ink-dim);letter-spacing:.1em}
-.dag-vis .cap{font-family:var(--ff-mono);font-size:12px;color:var(--ink-dim);letter-spacing:.08em}
+.dag-vis .cap{font-family:var(--ff-mono);font-size:13.5px;color:var(--ink-2);letter-spacing:.08em}
 
 .bignum{display:flex;flex-direction:column;gap:6px}
 .bignum .v{font-family:var(--ff-display);font-weight:900;font-size:clamp(40px,5.5vw,72px);letter-spacing:-.03em;line-height:.9;color:var(--solar)}
@@ -431,7 +434,7 @@ math{font-family:var(--ff-mono);font-size:1.02em;color:var(--cyan-2)}
 .refs{list-style:none;display:flex;flex-direction:column;gap:12px}
 .refs li{display:grid;grid-template-columns:42px 1fr;gap:14px;padding:14px 0;border-bottom:1px solid var(--line-soft);align-items:start}
 .refs li .n{font-family:var(--ff-mono);font-size:13px;color:var(--cyan);border:1px solid var(--line-bright);border-radius:7px;text-align:center;padding:5px 0}
-.refs li .t{font-size:13.5px;line-height:1.5;color:var(--ink-2)}
+.refs li .t{font-size:15px;line-height:1.55;color:var(--ink-2)}
 .refs li .t b{color:var(--ink)} .refs li .t span{color:var(--ink-faint);font-family:var(--ff-mono);font-size:11px;display:block;margin-top:3px}
 .endcard{text-align:left}
 .endcard .eyebrow{font-family:var(--ff-mono);font-size:12px;letter-spacing:.3em;color:var(--cyan);text-transform:uppercase}
